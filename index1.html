@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <header>
+        <nav class="nav container">
+            <h2 class="nav_logo"><a href="#">Train Booking</a></h2>
+
+            <ul class="menu_items">
+                <img src="images/shape-1.png" alt="timesicon" id="menu_toggle">
+                <li><a href="#" class="ho">Home</a></li>
+                <li><a href="index.html" class="boo">Book Tickets</a></li>
+                <li><a href="#" class="can">Cancel Ticket</a></li>
+                <li><a href="reg.html" class="reg">Register</a></li>
+                <li><a href="#" class="log">Login</a></li>
+            </ul>
+            <img src="images/shape-2.png" alt="timesicon" id="menu_toggle">
+        </nav>
+    </header>
+    <section class="hero">
+<div class="row container">
+    <div class="column">
+        <h2>Online Train Booking</h2>
+        <p>Online Train Booking provides train transportation system, a facility to reserved seats, cancellation of seat and different types of enquiry which need an instant and quick reservation. It is a web software solution designed to provide customers with a personalized easy-to-utilize user experience for booking and purchasing tickets online. It stores customer's data, scheduled routes, and other information.</p>
+        <div class="buttons">
+            <button class="btn">Read More</button>    
+            <button class="btn">Contact Us</button>
+        </div>
+    </div>
+    <div class="column">
+        <img src="images/hero-banner.png" alt="heroing" class="hero_img">
+    </div>
+</div>
+<img src="images/hero-bg-bottom.png" alt="" class="curveing">
+    </section>
+</main>
+
+<script>
+    const header = document.querySelector("header");
+    const menuToggler = document.querySelectorAll("#menu_toggle");
+    menuToggler.forEach(toggler =>{
+        toggler.addEventListener("click", ()=> header.classList.toggle("showMenu"));
+    });
+
+</script>
+</body>
+</html>
